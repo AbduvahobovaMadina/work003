@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
+
 </head>
 <body>
     <header class="header">
@@ -16,17 +18,23 @@
                     <h4>P.</h4>
                 </div>
                 <ul class="navbar__collection">
+                    <i onclick="toggleShow()" class="fa-solid fa-xmark"></i>
                     <li class="navbar__item"><a href="#">Home</a></li>
                     <li class="navbar__item"><a href="#">About</a></li>
                     <li class="navbar__item"><a href="#">Service</a></li>
                     <li class="navbar__item"><a href="#">Portfolio</a></li>
                     <li class="navbar__item"><a href="#">Blog</a></li>
                 </ul>
+                <div onclick="toggleShow()" class="navbar__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <button class="navbar__btn">Contact</button>
             </div>
         </div>
+        <a class="btn" href="#"><i class="fa-solid fa-up-long"></i></a>
     </header>
-
     <div class="hero">
         <div class="container">
             <div class="hero__subtitle">
@@ -240,6 +248,10 @@
                     </div>
             </div>
         </div>
+
+
+
+        <script src="./js/main.js"></script>
 
 </body>
 </html>
